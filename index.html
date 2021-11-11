@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Camara</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <h1 class="text-5xl text-center py-5">PWA Camara</h1>
+
+    <div class="mx-auto bg-gray-200" style="width: 300px; height: 300px;">
+        <video id="player" class="object-fill" autoplay></video>
+    </div>
+
+    <div class="flex flex-col justify-center py-5 max-w-md mx-auto space-y-5 px-3 md:px-0">
+        <button id="front_camera" class="py-5 text-lg font-thin bg-blue-400 text-white hover:text-black hover:bg-blue-200 transition duration-500 rounded">Camara Frontal</button>
+        <button id="back_camera" class="py-5 text-lg font-thin bg-blue-400 text-white hover:text-black hover:bg-blue-200 transition duration-500 rounded">Camara Trasera</button>
+        <button id="photo_camera" class="py-5 text-lg font-thin bg-blue-400 text-white hover:text-black hover:bg-blue-200 transition duration-500 rounded">Tomar Foto</button>
+    </div>
+
+    <div id="photo_list">
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
